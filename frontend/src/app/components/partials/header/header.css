@@ -49,7 +49,6 @@ a span{
 
 .menu-container{
     position: relative;
-
 }
 
 .menu{
@@ -57,14 +56,13 @@ a span{
     z-index: 1;
     background: turquoise;
     display: none;
-
 }
 
 .menu-container:hover .menu{
     display:block;
-
 }
 
 .menu a{
     width: 100%;
 }
+

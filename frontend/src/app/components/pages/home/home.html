@@ -1,0 +1,11 @@
+<ul>
+    @for (paperella of paperelle; track paperella.id){
+    <li>
+        <a [routerLink]="['/paperella', paperella.id]">
+            <img [src]="paperella.imageUrl" [alt]="paperella.nome"/>
+        </a>
+  </li>
+
+}
+</ul>
+
