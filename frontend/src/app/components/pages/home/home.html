@@ -1,11 +1,45 @@
 <ul>
-    @for (paperella of paperelle; track paperella.id){
+  @for (paperella of paperelle; track paperella.id) {
     <li>
-        <a [routerLink]="['/paperella', paperella.id]">
-            <img [src]="paperella.imageUrl" [alt]="paperella.nome"/>
-        </a>
-  </li>
+      <a [routerLink]="['/paperella', paperella.id]">
+        <img class="duck" [src]="paperella.imageUrl" [alt]="paperella.nome" />
+      </a>
 
-}
+      <div class="content">
+        <span class="name">{{ paperella.nome }}</span>
+
+        <button
+         type="button" 
+         class="heart" 
+        [class.active]="isPreferito(paperella.id)"
+        (click)="togglePreferito(paperella.id)"
+        aria-label="Aggiungi ai preferiti">
+        
+      <svg viewBox="0 0 9 8" shape-rendering="crispEdges" aria-hidden="true">
+    <!-- contorno -->
+    <path
+      fill="#000"
+      d="M2 0h2v1H2z M5 0h2v1H5z M1 1h1v1H1z M4 1h1v1H4z M7 1h1v1H7z
+         M0 2h1v2H0z M8 2h1v2H8z M1 4h1v1H1z M7 4h1v1H7z
+         M2 5h1v1H2z M6 5h1v1H6z M3 6h1v1H3z M5 6h1v1H5z M4 7h1v1H4z"
+    />
+    <!-- riempimento -->
+    <path
+      fill="currentColor"
+      d="M2 1h2v1H2z M5 1h2v1H5z M1 2h7v2H1z M2 4h5v1H2z M3 5h3v1H3z M4 6h1v1H4z"
+    />
+  </svg>
+      
+      </button>
+
+
+
+      </div>
+      <div class="prezzo">
+      <span>
+        {{ paperella.prezzo | currency }}
+      </span>
+      </div>
+    </li>
+  }
 </ul>
-

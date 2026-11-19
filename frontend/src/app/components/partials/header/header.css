@@ -1,19 +1,19 @@
 header{
     position: relative;
-    background: Pink;
+    background: #caff60;
     padding: 0;
     border-bottom: 10px solid #4D2B6B;
 
 }
 a{
-    color: grey;
+    color: #281150;
 
 }
 
 a:hover{
     background: yellow;
     color: blue;
-    cursor: crosshair;
+    cursor: pointer;
 
 }
 .container{

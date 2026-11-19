@@ -1,0 +1,64 @@
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.heart {
+  width: 27px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background: none;
+  color: white;
+}
+
+.heart svg{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.heart.active{
+  color: #e72929
+}
+
+
+li a{
+  height: 22.5rem;
+  width: 20rem;
+  
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  
+}
+
+ li a:hover{
+     opacity: 0.9;
+     cursor: pointer;
+}
+
+li a img{
+ .duck{
+  width: 100%;
+  height: auto;
+  display: block;
+ }
+ 
+}
+
